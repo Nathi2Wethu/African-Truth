@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>African Truth - Rediscovering Our Heritage</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <span class="icon"><i class="fas fa-landmark"></i></span>
+            <h1>AFRICAN TRUTH</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#leaders">Leaders</a></li>
+            <li><a href="#kingdoms">Kingdoms</a></li>
+            <li><a href="#wars-resistance">Wars & Resistance</a></li>
+            <li><a href="#colonialism">Colonialism</a></li>
+            <li><a href="#independence">Independence</a></li>
+            <li><a href="#interactive">Interactive</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Rediscovering Africa's Untold History</h2>
+            <p>Exploring the rich heritage, heroic struggles, and enduring legacy of the African continent</p>
+            <button class="explore-btn">Begin Journey <i class="fas fa-arrow-right"></i></button>
+        </div>
+        <div class="hero-image">
+            <!-- Background image set in CSS -->
+        </div>
+    </section>
+
+    <!-- Leaders Section -->
+    <section id="leaders" class="section">
+        <div class="section-header">
+            <h2>Great African Leaders</h2>
+            <div class="filter-controls">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="ancient">Ancient</button>
+                <button class="filter-btn" data-filter="colonial">Anti-Colonial</button>
+                <button class="filter-btn" data-filter="modern">Modern</button>
+            </div>
+        </div>
+        <div class="leaders-container">
+            <!-- Dynamically populated by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Kingdoms Section -->
+    <section id="kingdoms" class="section">
+        <div class="section-header">
+            <h2>Ancient Kingdoms & Civilizations</h2>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Kingdom of Kush (1070 BC - 350 AD)</h3>
+                    <p>The Nubian kingdom that conquered Egypt and ruled as the 25th Dynasty. Known for its pyramids, ironworking, and resistance against Roman expansion.</p>
+                    <button class="read-more" data-target="kush-details">Read More</button>
+                </div>
+            </div>
+            <!-- More timeline items added by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Wars & Resistance Section -->
+    <section id="wars-resistance" class="section">
+        <div class="section-header">
+            <h2>Wars & Resistance Movements</h2>
+        </div>
+        <div class="tab-container">
+            <div class="tab-buttons">
+                <button class="tab-btn active" data-tab="pre-colonial">Pre-Colonial</button>
+                <button class="tab-btn" data-tab="anti-colonial">Anti-Colonial</button>
+                <button class="tab-btn" data-tab="modern-conflicts">Modern</button>
+            </div>
+            <div class="tab-content active" id="pre-colonial">
+                <!-- Content loaded by JavaScript -->
+            </div>
+            <div class="tab-content" id="anti-colonial">
+                <!-- Content loaded by JavaScript -->
+            </div>
+            <div class="tab-content" id="modern-conflicts">
+                <!-- Content loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Colonialism Section -->
+    <section id="colonialism" class="section dark-section">
+        <div class="section-header">
+            <h2>Colonialism & Oppression</h2>
+            <p>The brutal history and lasting impacts of European colonization</p>
+        </div>
+        <div class="carousel">
+            <div class="carousel-slide active">
+                <h3>The Scramble for Africa</h3>
+                <p>The 1884 Berlin Conference divided Africa among European powers without African representation, creating artificial borders that still cause conflicts today.</p>
+            </div>
+            <!-- More slides added by JavaScript -->
+            <button class="carousel-btn prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="carousel-btn next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- Independence Section -->
+    <section id="independence" class="section">
+        <div class="section-header">
+            <h2>The Road to Independence</h2>
+        </div>
+        <div class="map-container">
+            <div class="africa-map">
+                <!-- SVG map of Africa -->
+                <img src="assets/images/africa-map.svg" alt="Africa map" usemap="#africamap">
+                <map name="africamap">
+                    <!-- Image map areas would be defined here -->
+                </map>
+                <div class="map-tooltip"></div>
+            </div>
+            <div class="independence-facts">
+                <h3>Select a country to see its independence story</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Section -->
+    <section id="interactive" class="section">
+        <div class="section-header">
+            <h2>Explore Interactive Content</h2>
+        </div>
+        <div class="interactive-container">
+            <div class="quiz-box">
+                <h3>Test Your Knowledge</h3>
+                <div class="quiz-question">
+                    <span id="question-text"></span>
+                    <div class="quiz-options"></div>
+                </div>
+                <button id="quiz-next">Next Question</button>
+                <div class="quiz-score">Score: <span>0</span>/10</div>
+            </div>
+            <div class="memory-game">
+                <h3>Historical Figures Memory Game</h3>
+                <div class="game-board"></div>
+                <div class="game-stats">
+                    <span>Moves: <span class="moves">0</span></span>
+                    <span>Pairs: <span class="pairs">0</span>/8</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About African Truth</h3>
+                <p>A project dedicated to preserving and sharing the authentic history of Africa and its people through interactive education.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Timeline</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Contribute</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2023 African Truth. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modal for detailed content -->
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close-modal">×</span>
+            <h2 class="modal-title"></h2>
+            <div class="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

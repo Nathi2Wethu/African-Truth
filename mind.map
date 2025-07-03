@@ -1,0 +1,12 @@
+african_truth/
+├── index.html          # Main page
+├── styles.css          # CSS styling
+├── script.js           # Interactive elements
+├── app.py              # Python backend (Flask)
+├── data/
+│   ├── leaders.json    # Leader biographies
+│   ├── kingdoms.json   # Kingdom information
+│   ├── wars.json       # Conflict data
+└── assets/
+    ├── images/         # Historical images
+    ├── icons/          # UI icons
